@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewNameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Trần Thanh Vỹ  MSV: 22115053122251"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNameID"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonReadMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MESSAGE"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#BD5555"/>
+
+        <Button
+            android:id="@+id/buttonReadCallLogs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="CALL LOG"
+            android:backgroundTint="#5ED144"/>
+
+        <Button
+            android:id="@+id/buttonReadContacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTACT" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="21dp" />
+</RelativeLayout>
